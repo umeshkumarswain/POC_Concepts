@@ -1,0 +1,12 @@
+<ag-grid-angular
+[rowData]="rowData"
+[columnDefs]="colDefs"
+class="ag-theme-alpine"
+style="height: 500px;width: 98%;"
+[defaultColDef] = "defaultColDefs"
+[rowSelection]="'multiple'"
+[animateRows] = "true"
+(cellClicked)="onCellClicked($event)"
+(gridReady)="onGridReady($event)"
+>
+</ag-grid-angular>
